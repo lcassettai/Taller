@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.HomeController">
+   <children>
+      <Label layoutX="272.0" layoutY="55.0" />
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="58.0" prefWidth="600.0" text="PANTALLA INICIAL" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnMecanicos" layoutX="29.0" layoutY="174.0" mnemonicParsing="false" onAction="#mostrarPantallaMecanicos" text="Mecanicos">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="183.0" layoutY="174.0" mnemonicParsing="false" onAction="#mostrarPantallaAgenda" text="Agenda">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="311.0" layoutY="174.0" mnemonicParsing="false" onAction="#mostrarClientes" text="Clientes">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="440.0" layoutY="174.0" mnemonicParsing="false" text="Informes">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
