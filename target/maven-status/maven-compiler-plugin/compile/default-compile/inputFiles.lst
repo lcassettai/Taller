@@ -1,4 +1,5 @@
 E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\Controlador\DatosClienteController.java
+E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\Dto\PersonaDTO.java
 E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\module-info.java
 E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\DataBase\Conexion.java
 E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\Modelo\Vehiculo.java
@@ -24,3 +25,4 @@ E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\jav
 E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\Modelo\Empleado.java
 E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\Modelo\HorarioAtencion.java
 E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\Controlador\App.java
+E:\Usuarios\Lucho\Documentos\NetBeansProjects\SeminarioProgramacion\src\main\java\Dao\PersonaDAO.java
