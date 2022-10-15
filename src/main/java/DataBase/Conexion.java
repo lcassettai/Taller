@@ -7,28 +7,42 @@ package DataBase;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
  * @author win
  */
 public class Conexion {
-    public static Connection conectar() {
-		Connection con = null;
-		
-		String password = "";
-		String usuario = "root";
-		String url = "jdbc:mysql://localhost:3306/mecanica?user=" + usuario
-				+ "&password=" + password;
-		try {
-			con = DriverManager.getConnection(url);
-			if (con != null) {
-				System.out.println("Conectado");
-			}
-		} catch (SQLException e) {
-			System.out.println("No se pudo conectar a la base de datos");
-			e.printStackTrace();
-		}
-		return con;
-	}
+
+    public static Conexion instance;//singleton 
+    private Connection cnn;
+
+    private Conexion() {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            cnn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mecanica", "root", "");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public synchronized static Conexion saberEstado() {
+        if (instance == null) {
+            instance = new Conexion();
+        }
+        return instance;
+    }
+
+    public Connection getCnn() {
+        return cnn;
+    }
+
+    public void cerrarConexion() {
+        instance = null;
+    }
 }
