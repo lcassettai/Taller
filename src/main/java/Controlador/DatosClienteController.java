@@ -15,12 +15,12 @@ import javafx.scene.control.Button;
 /**
  * FXML Controller class
  *
- * @author luciano
+ * @author win
  */
-public class MecanicosController implements Initializable {
+public class DatosClienteController implements Initializable {
 
     @FXML
-    private Button btnVolver;
+    private Button btnVClientes;
 
     /**
      * Initializes the controller class.

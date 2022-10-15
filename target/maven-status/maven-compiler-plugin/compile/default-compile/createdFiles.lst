@@ -1,2 +1,7 @@
 Controlador\App.class
+Controlador\HomeController.class
 module-info.class
+Controlador\LoginController.class
+Controlador\InformesController.class
+Controlador\AgendaController.class
+Controlador\ClientesController.class

@@ -2,19 +2,33 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.AgendaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../java/estilos/newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.AgendaController">
    <children>
-      <Label alignment="CENTER" layoutX="10.0" layoutY="36.0" prefHeight="58.0" prefWidth="600.0" text="AGENDA">
+      <Label alignment="CENTER" layoutX="3.0" layoutY="14.0" prefHeight="58.0" prefWidth="600.0" text="AGENDA">
         
           <font>
             <Font size="40.0" />
          </font>
       </Label>
       <ButtonBar layoutY="299.0" prefHeight="40.0" prefWidth="200.0" />
-      <Button layoutX="40.0" layoutY="339.0" mnemonicParsing="false" onAction="#mostrarPantallaHome" text="Volver" />
+      <Button fx:id="btnVAgenda" layoutX="22.0" layoutY="339.0" mnemonicParsing="false" onAction="#volveratras" text="Volver" />
+      <DatePicker layoutX="200.0" layoutY="91.0" />
+      <Button fx:id="btnAgendar" layoutX="448.0" layoutY="339.0" mnemonicParsing="false" text="Registrar Asistencia" />
+      <TableView layoutX="14.0" layoutY="130.0" prefHeight="200.0" prefWidth="571.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Cliente" />
+          <TableColumn prefWidth="75.0" text="Mecanico" />
+            <TableColumn prefWidth="75.0" text="Patente" />
+            <TableColumn prefWidth="75.0" text="Fecha" />
+            <TableColumn prefWidth="75.0" text="Especialidad" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

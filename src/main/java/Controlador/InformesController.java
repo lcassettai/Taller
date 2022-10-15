@@ -4,6 +4,7 @@
  */
 package Controlador;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -30,7 +31,8 @@ public class InformesController implements Initializable {
     }    
 
     @FXML
-    private void volverAtras(ActionEvent event) {
+    private void volverAtras(ActionEvent event) throws IOException {
+        App.setRoot("home");
     }
     
 }

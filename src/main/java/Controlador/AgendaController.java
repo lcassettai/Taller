@@ -4,11 +4,13 @@
  */
 package Controlador;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 
 /**
  * FXML Controller class
@@ -16,6 +18,9 @@ import javafx.fxml.Initializable;
  * @author win
  */
 public class AgendaController implements Initializable {
+
+    @FXML
+    private Button btnVAgenda;
 
     /**
      * Initializes the controller class.
@@ -26,7 +31,8 @@ public class AgendaController implements Initializable {
     }    
 
     @FXML
-    private void mostrarPantallaHome(ActionEvent event) {
+    private void volveratras(ActionEvent event) throws IOException {
+          App.setRoot("home");
     }
     
 }

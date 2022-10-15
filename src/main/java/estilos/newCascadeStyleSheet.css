@@ -1,0 +1,23 @@
+.label{ -fx-font-family: "Times New Roman"; 
+         -fx-font-style: italic;
+       
+         -fx-text-fill: #5C09F7;
+}
+
+AnchorPane { -fx-background-color: #DBF9FC;}
+
+Button { -fx-background-color: #E6FD74;
+         -fx-border-color: #FFFFFF;
+         -fx-border-width: 2;
+         -fx-text-fill: #FF3399;
+         -fx-font-family: "Georgia";
+         -fx-font-style: italic;
+      
+         -fx-background-radius: 10 10 10 10;
+         -fx-border-radius: 10 10 10 10;
+}
+
+
+
+
+

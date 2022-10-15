@@ -17,14 +17,14 @@ import javafx.scene.control.Button;
  *
  * @author luciano
  */
-public class HomeController implements Initializable {
+public class TurnosController implements Initializable {
 
     @FXML
-    private Button btnMecanicos;
- 
-   
-    
-
+    private Button btnVolver;
+    @FXML
+    private Button btnVolver2;
+    @FXML
+    private Button btnVolver11;
 
     /**
      * Initializes the controller class.
@@ -35,26 +35,17 @@ public class HomeController implements Initializable {
     }    
 
     @FXML
-    private void mostrarPantallaMecanicos(ActionEvent event) throws IOException {
-        App.setRoot("turnos");
+    private void volverAtras(ActionEvent event) throws IOException {
+        App.setRoot("home");
     }
 
-    @FXML
     private void mostrarPantallaAgenda(ActionEvent event) throws IOException {
         App.setRoot("agenda");
-    } 
-
-    @FXML
-    private void mostrarPantallaClientes(ActionEvent event) throws IOException {
-        App.setRoot("clientes");
-    }
-@FXML
-    private void mostrarPantallaInformes(ActionEvent event) throws IOException {
-        App.setRoot("informes");
     }
 
     @FXML
-    private void mostrarPantallaFichaMecanica(ActionEvent event) throws IOException {
-        App.setRoot("fichaMecanica");
+    private void mostrarPantallafichaMecanica(ActionEvent event) throws IOException {
+         App.setRoot("fichaMecanica");
     }
-    }
+    
+}

@@ -10,19 +10,13 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 
 /**
  * FXML Controller class
  *
- * @author luciano
+ * @author win
  */
-public class ClientesController implements Initializable {
-
-    @FXML
-    private Button btnVAgenda;
-    @FXML
-    private Button btnVAgenda1;
+public class FichaMecanicaController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -33,13 +27,8 @@ public class ClientesController implements Initializable {
     }    
 
     @FXML
-    private void volveratras(ActionEvent event) throws IOException {
+    private void volverAtras(ActionEvent event) throws IOException {
         App.setRoot("home");
-    }
-
-    @FXML
-    private void nuevoCliente(ActionEvent event) throws IOException {
-        App.setRoot("DatosCliente");
     }
     
 }
