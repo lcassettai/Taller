@@ -9,6 +9,7 @@ package Modelo;
  * @author luciano
  */
 public abstract class Empleado extends Persona {
+
     int idEmpleado;
     String usuario;
     String pass;

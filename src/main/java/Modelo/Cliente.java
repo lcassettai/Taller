@@ -9,25 +9,19 @@ package Modelo;
  * @author luciano
  */
 public final class Cliente extends Persona {
+
     int idCliente;
-    
-    public Cliente(){
-        this.setIdCliente(0);
-        super.setIdPersona(0);
-        super.setNombres("");
-        super.setApellido("");
-        super.setNroDocumento("");
-        super.setTipoDocumento("");
+
+    public Cliente() {
     }
-    
-    public Cliente(int idCliente, int idPersona, String nombres, String apellido, String nroDocumento, String tipoDocumento){
+
+    public Cliente(int idCliente, int idPersona, String nombres, String apellido, String nroDocumento, String tipoDocumento) {
         this.setIdCliente(idCliente);
         super.setIdPersona(idPersona);
         super.setNombres(nombres);
         super.setApellido(apellido);
         super.setNroDocumento(nroDocumento);
         super.setTipoDocumento(tipoDocumento);
-        
     }
 
     public int getIdCliente() {
@@ -37,6 +31,4 @@ public final class Cliente extends Persona {
     public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
-    
-    
 }

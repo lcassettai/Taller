@@ -10,6 +10,15 @@ package Modelo;
  */
 public class Rol {
     int idRol;
+    String rol;
+
+    public Rol() {
+    }
+
+    public Rol(int idRol, String rol) {
+        this.idRol = idRol;
+        this.rol = rol;
+    }
 
     public int getIdRol() {
         return idRol;
@@ -25,6 +34,5 @@ public class Rol {
 
     public void setRol(String rol) {
         this.rol = rol;
-    }
-    String rol;
+    }    
 }

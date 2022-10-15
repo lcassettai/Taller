@@ -9,7 +9,9 @@ package Modelo;
  * @author luciano
  */
 public class Especialidad {
+
     int idEspecialidad;
+    String especialidad;
 
     public int getIdEspecialidad() {
         return idEspecialidad;
@@ -26,6 +28,4 @@ public class Especialidad {
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
-    String especialidad;
-    
 }
