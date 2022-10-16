@@ -15,13 +15,9 @@ public final class Cliente extends Persona {
     public Cliente() {
     }
 
-    public Cliente(int idCliente, int idPersona, String nombres, String apellido, String nroDocumento, String tipoDocumento) {
+    public Cliente(int idCliente, int idPersona, String nombres, String apellido, String nroDocumento, String tipoDocumento, String telefono) {
+        super(idPersona,nombres,apellido,nroDocumento,tipoDocumento,telefono);
         this.setIdCliente(idCliente);
-        super.setIdPersona(idPersona);
-        super.setNombres(nombres);
-        super.setApellido(apellido);
-        super.setNroDocumento(nroDocumento);
-        super.setTipoDocumento(tipoDocumento);
     }
 
     public int getIdCliente() {

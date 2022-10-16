@@ -16,6 +16,18 @@ public abstract class Persona {
     String nroDocumento;
     String telefono;
 
+    public Persona() {
+    }
+
+    public Persona(int idPersona, String nombres, String apellido, String nroDocumento, String tipoDocumento, String telefono) {
+        this.idPersona = idPersona;
+        this.nombres = nombres;
+        this.apellido = apellido;
+        this.tipoDocumento = tipoDocumento;
+        this.nroDocumento = nroDocumento;
+        this.telefono = telefono;
+    }
+    
     public int getIdPersona() {
         return idPersona;
     }

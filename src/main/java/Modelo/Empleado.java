@@ -14,6 +14,18 @@ public abstract class Empleado extends Persona {
     String usuario;
     String pass;
     Rol rolEmpleado;
+    
+    public Empleado(){
+        
+    }
+
+    public Empleado(int idEmpleado, String usuario, String pass, Rol rolEmpleado, int idPersona, String nombres, String apellido, String nroDocumento, String tipoDocumento, String telefono) {
+        super(idPersona, nombres, apellido, nroDocumento, tipoDocumento, telefono);
+        this.idEmpleado = idEmpleado;
+        this.usuario = usuario;
+        this.pass = pass;
+        this.rolEmpleado = rolEmpleado;
+    }   
 
     public int getIdEmpleado() {
         return idEmpleado;
