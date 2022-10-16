@@ -148,5 +148,30 @@ public class EmpleadosDAO implements Obligacion<EmpleadosDTO> {
         }
         return empleados;
     }
+    
+    public int validarUsuario(String usuario, String password) {
+        PreparedStatement statement;
+        ResultSet resultado;
+        int idPersona = 0 ;
+        
+        String sql = "SELECT id_persona FROM empleados WHERE usuario = ? AND pass = ?";
+        try {
+            statement = con.getCnn().prepareStatement(sql);
+            statement.setString(1, usuario);
+            statement.setString(2, password);
+            
+            resultado = statement.executeQuery();
+
+            while (resultado.next()) {
+                idPersona = resultado.getInt(1);
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(EmpleadosDAO.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            con.cerrarConexion();
+        }
+        return idPersona;
+    }
 
 }
