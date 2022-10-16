@@ -1,6 +1,6 @@
 Controlador\HomeController.class
-module-info.class
-Controlador\LoginController.class
 Controlador\InformesController.class
 Controlador\AgendaController.class
+module-info.class
+Controlador\LoginController.class
 Controlador\ClientesController.class
